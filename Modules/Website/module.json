@@ -1,0 +1,14 @@
+{
+    "name": "Website",
+    "alias": "website",
+    "description": "Manage your website",
+    "keywords": [],
+    "order": 0,
+    "system_module": true,
+    "providers": [
+        "Modules\\Website\\Providers\\WebsiteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

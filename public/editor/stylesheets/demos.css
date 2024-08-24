@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#toast-container {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+#toast-container > div {
+    opacity: 0.95;
+}
+
+#toast-container > div,
+#toast-container > div:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica, sans-serif;
+}
+
+/* LOGO VERSION */
+
+.gjs-pn-commands .gjs-pn-buttons,
+#gjs-pn-commands .gjs-pn-buttons {
+    display: none;
+}
+
+.gjs-logo {
+    height: 25px;
+}
+
+.gjs-logo-cont {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+}
+
+.gjs-logo-version {
+    position: absolute;
+    font-size: 10px;
+    padding: 1px 7px;
+    border-radius: 15px;
+    bottom: 2px;
+    right: -43px;
+}
+
+/* INFO PANEL */
+
+.gjs-mdl-dialog-sm {
+    width: 300px;
+}
+
+#info-panel {
+    line-height: 17px;
+}
+
+.info-panel-logo {
+    display: block;
+    height: 90px;
+    margin: 0 auto;
+    width: 90px;
+}
+
+.info-panel-logo path {
+    stroke: #eee !important;
+    stroke-width: 8 !important;
+}
+
+.info-panel-label {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.info-panel-link {
+    text-decoration: none;
+}
+
+.gjs-block-label svg,
+.gjs-block__media svg {
+    width: 35px;
+}
+
+/* Temporary fix #2490 */
+.gjs-clm-tag-status,
+.gjs-clm-tag-close {
+    width: 12px;
+    height: 12px;
+}
+
+.gjs-clm-tags-btn {
+    width: 24px;
+}
+
+.gjs-four-color {
+    color: white !important;
+    transition: all .4s ease-in-out;
+}
+
+.gjs-four-color-h:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.widget-options {
+    background-color: #37474f;
+    border-color: #00044c;
+    width: 90%;
+    padding: 10px;
+}
+
+.widget-options label {
+    font-family: Lato, Serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.widget-options select {
+    width: 100%;
+    background-color: #37474f;
+    cursor: pointer;
+    color: white;
+    padding: 6px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid white;
+}
+
+.btn {
+    background-color: #37474f;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btn.selected {
+    background-color: #6b7377;
+}
+
+.btn:hover {
+    background-color: #6b7377;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.gjs-clm-tags {
+    visibility: hidden;
+    display: none;
+}
+
+
+.gjs-block-label {
+    font-family: Lato, serif;
+}
+
+.gjs-one-bg {
+    background-color: #37474f;
+}
+
+.gjs-two-color {
+    color: #ddd;
+}
+
+.gjs-block {
+    background-color: rgba(177, 186, 204, .3);
+}
+
+.gjs-pn-btn.gjs-pn-active {
+    border-bottom: 1px solid white;
+}
+
+.gjs-cv-canvas .gjs-highlighter {
+    outline-width: 4px;
+}
+
+
+.gjs-cv-canvas .gjs-selected-parent {
+    outline: 4px solid #00044c !important;
+}
+
+.gjs-field select option {
+    /*color: black;*/
+}
+
+.bonus-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.bonus-list li {
+    color: white;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.bonus-list i {
+    cursor: pointer;
+}
+
+.bonus-list a i {
+    color: white;
+}
+
+.bonus-list i.fa-plus {
+    margin-left:10px;
+}
+
+.bonus-list li span {
+    margin-left: 15px;
+}
+
+.fx-height {
+    max-height: 300px;
+    overflow: scroll;
+}
+
+/*.gjs-block{*/
+/*    width: 95% !important;*/
+/*}*/

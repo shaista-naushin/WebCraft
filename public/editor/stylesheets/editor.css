@@ -1,0 +1,11 @@
+.gjs-dashed .gjs-selected {
+  outline-width: 4px;
+}
+
+.gjs-placeholder-int, .gjs-com-placeholder-int, .gjs-nv-placeholder-int {
+  outline-width: 10px;
+}
+
+.container {
+  padding-bottom: 100px;
+}
