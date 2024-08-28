@@ -29,6 +29,7 @@
                             <td>{{$data->name}}</td>
                             <td>{{$data->email}}</td>
                             <td>
+                                @if($data->extra)
                                 <ul style="list-style: none;">
                                     @foreach(json_decode($data->extra) as $key => $value)
                                         @if(!is_null($value) && strlen($value) > 0 && !str_starts_with($key, "x-") && $key != 'page_id')
@@ -36,9 +37,10 @@
                                         @endif
                                     @endforeach
                                 </ul>
+                                @endif
                             </td>
                             <td>
-                                {{$data->created_at->toDayDateTimeString()}}
+                                {{$data->created_at?->toDayDateTimeString()}}
                             </td>
                             <td>
                                 <a class="btn btn-danger" href="/form-data/delete/{{$data->id}}"><i data-feather="x"

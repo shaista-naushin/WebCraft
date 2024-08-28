@@ -53,8 +53,8 @@ Route::get('/pages/view/{id}', [PagesController::class, 'viewPage']);
 Route::middleware(['verified', 'auth', 'web'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::get('/form-data/list', [FormDataController::class, 'getAll']);
-    Route::get('/form-data/delete/{id}', [FormDataController::class, 'destroy']);
+    Route::get('/form-data/list', [FormDataController::class, 'getAll'])->name('form-data.index');
+    Route::get('/form-data/delete/{id}', [FormDataController::class, 'destroy'])->name('form-data.destroy');
 
     Route::get('/popup/list', [PopupController::class, 'getAll']);
     Route::get('/popup/create', [PopupController::class, 'create']);

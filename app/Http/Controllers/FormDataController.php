@@ -10,7 +10,12 @@ class FormDataController extends Controller
     public function getAll()
     {
         $pageIds = Page::where('user_id', auth()->user()->id)->pluck('id');
-        $formData = FormData::whereIn('page_id', $pageIds)->with('page')->orderBy('created_at', 'desc')->get();
+        $formData = [];
+
+        if (count($pageIds) > 0) {
+            $formData = FormData::whereIn('page_id', $pageIds)->with('page')->orderBy('created_at', 'desc')->get();
+        }
+
         return view('admin.form-data.list', ['formData' => $formData]);
     }
 
