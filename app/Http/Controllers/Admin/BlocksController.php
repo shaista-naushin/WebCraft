@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Component;
 use App\Http\Controllers\Controller;
 use App\Models\Utils;
+use Exception;
 use Illuminate\Support\Facades\Validator;
 use splitbrain\PHPArchive\Zip;
 use Illuminate\Support\Facades\Storage;
@@ -70,7 +71,7 @@ class BlocksController extends Controller
 
             session()->flash('success_msg', 'Block created successfully');
             return redirect('/admin/blocks/list');
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             session()->flash('error_msg', 'Unable to create block');
             return redirect()->back()->withInput(request()->all());
         }
@@ -148,7 +149,7 @@ class BlocksController extends Controller
 
             session()->flash('success_msg', 'Block installed successfully');
             return redirect('/admin/blocks/list');
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             session()->flash('error_msg', 'Unable to install block, contact developer');
             return redirect()->back()->withInput(request()->all());
         }
@@ -234,7 +235,7 @@ class BlocksController extends Controller
 
             session()->flash('success_msg', 'Block updated successfully');
             return redirect('/admin/blocks/list');
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             session()->flash('success_msg', $e->getMessage());
             return redirect()->back()->withInput(request()->all());
         }
